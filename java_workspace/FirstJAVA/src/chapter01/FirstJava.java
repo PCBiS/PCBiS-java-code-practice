@@ -97,19 +97,19 @@ public class FirstJava {
 		 * 4. private - 자기 자신의 클래스 내부에서만 접근가능.
 		 */		
 	
-		protected static int multiply(int a, int b) {
+		public static int multiply(int a, int b) {
 			return a*b;
 		}
 		
-		public static int sum(int a, int b) {		
+		protected static int sum(int a, int b) {		
 			return a+b;	
 		}
 		
-		private static int odd(int a, int b) {
+		static int odd(int a, int b) {
 			return a-b;
 		}
 		
-		static int division(int a, int b) {
+		private static int division(int a, int b) {
 			return a/b;		
 		}
 }
