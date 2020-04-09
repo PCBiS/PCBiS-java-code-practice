@@ -11,8 +11,10 @@ public class Ex04 {
 		double num3 = num1 * 10000000;
 		double num4 = num2 * 10000000;
 		System.out.println("num3 :" + num3 + " num4 :" + num4);
-		double result2 = num3 + num4;		
-		System.out.println("num3 + num4 = " + result2/10000000);
-		
-	}	
+		double result2 = num3 + num4;
+		System.out.println("num3 + num4 = " + result2 / 10000000);
+
+		int a = 10;
+		System.out.println(a + 'h');
+	}
 }

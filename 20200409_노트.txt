@@ -1,3 +1,19 @@
+변수(Variable) - data 하나를 저장하기 위한 공간, 값 변경 가능.
+				 ex ) int a = 100;
+						  b = 200;
+					  String str = 'abc'; 등등...
+			   
+
+상수(Constant) - data를 한번만 저장 가능한 공간, 다시 말하면 값은 변경 불가능.
+				 ex) final int MAX = 100
+					  ㄴfinal : 상수선언문
+					    MAX : 상수가 되는 변수는 대문자로만 표현.
+				 
+리터럴(Literal) - 그 자체가 값인 것
+
+
+
+
 변수 선언 방법
 	int score; <- int 타입의 자료형 score 이라는 변수를 선언함
 	score = 100; 변수 score(저장장소)에 100(데이터)을 저장
@@ -19,3 +35,17 @@
 						int b, float d; (불가능)
 						
 						
+자료형의 종류
+
+	논리형 : boolean - true or false (1 byte)
+	문자형 : char - 연산시 integer 로 변경되는 점을 주의 (2 byte)
+	정수형 : byte (1 byte)
+			 short (2 byte)
+			 int (4 byte)
+			 long (8 byte)
+	실수형 : float - (4 byte)
+			 double - (8 byte)
+			 
+			 
+다루어야 하는 데이터에 맞는 변수 선언을 해야 한다.
+데이터의 연산에 알맞는 변수를 선언해야 한다.
