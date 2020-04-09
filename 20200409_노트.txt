@@ -1,0 +1,21 @@
+변수 선언 방법
+	int score; <- int 타입의 자료형 score 이라는 변수를 선언함
+	score = 100; 변수 score(저장장소)에 100(데이터)을 저장
+	
+	int score = 100; <- 한줄로 표현 가능
+	
+	String str = new String("ABC"); <- 문자열 타입의 자료형 str 이라는 변수에 ABC라는 문자열을 저장함.
+	
+	예제
+		int a;
+		int b; -> int a,b; (가능)
+		
+		int a;
+		float b;
+		int c;		 -> int a, c;
+		float d;		float b, d; (가능)
+			
+					 -> int a, float c;
+						int b, float d; (불가능)
+						
+						
