@@ -47,7 +47,7 @@ public class FirstJava {
 	 * 데이터 : 컴퓨터에게 자료 유형을 알려주기 위한 일종의 약속
 	 * 			- 기본 데이터형
 	 * 				- 숫자형
-	 * 					- 정수형 : byte, short, int, long
+	 * 					- 정수형 : byte (1 byte), shor (2 byte)t, int (4 byte), long (8byte)
 	 * 					- 실수형 : float, double(실수형은 아무것도 선언하지 않으면 double 타입으로 인식함)
 	 * 				- 논리형
 	 * 					- boolean (true / false), null
