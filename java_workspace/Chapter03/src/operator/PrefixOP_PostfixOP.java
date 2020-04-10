@@ -4,10 +4,13 @@ public class PrefixOP_PostfixOP {
 	public static void main(String[] args) {
 		PrefixOP();
 		PostfixOP();
+		System.out.println("1"+1.1f); // 자바스크립트도 이 지랄이라니 슬프다...
+		
+		
 	}
 
 	public static void PrefixOP() {
-		int num1 = 7;
+		int num1 = 7;		
 		int num2, num3;
 		
 		num2 = ++num1; // 전위형 증가연산을 했기 때문에 num2에 num1에서 1을 증가한 값을 대입시킨다.
