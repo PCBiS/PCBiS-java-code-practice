@@ -61,13 +61,18 @@
 	- float + int -> float + float = float
 	- long + float -> float + float = float
 	- float + double -> double + double = double
-	- char c2 = ++c1; 단항연산중 증가연산일 때만 c1==65 + 1의 결과값인 유니코드 66을 c2에 대입된다.
+	- char c2 = ++c1; 단항연산중 증가연산일 때만 c1==65 + 1의 결과값인 유니코드 66을 c2에 대입된다.                                                
 	
 	ex : byte a = 10, b = 20;
 		 byte c = a+b;
 		 
 		 byte c = (byte)a+b; - 에러임. 이유는 a(byte) + b(int) = c(int) -> c는 byte 형 변수임으로 치환 불가능.
 		 byte c = (byte)(a+b); - 정상임. 이유는 a(int)+b(int) = byte(c(int))로 치환 한 결과값인 c(byte)로 저장하기 때문에 가능.
-		 
+
+
+--operatorEx16 : lowercase와 uppercase의 차이는 32임.
+				 소문자를 대문자로 바꾸려면 -32를 하고
+				 반대로 대문자를 소문자로 바꾸려면 +32를 하면 됨.
+--operatorEx20 : for문에서의 i 값은 지역변수로서, for문의 {} 중괄호 밖을 벗어나면 소멸하는 값임.
 	
 	
