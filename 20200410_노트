@@ -53,6 +53,21 @@
 	- char 타입은 비교연산시 integer 타입으로 변환되어 비교 한다 (ex) 'a' < 'b' => 65 < 66 -> true)
 	
 
+이항연산자 특징
+	- 이항연산자는 연산을 수행하기 전에 피연산자의 type을 일치시킨다. 무조건 큰 쪽으로...
+	- byte, short는 연산시 integer로 변해버림.
+	- byte + short -> int + int = int
+	- char + int -> int + int = int
+	- float + int -> float + float = float
+	- long + float -> float + float = float
+	- float + double -> double + double = double
+	- char c2 = ++c1; 단항연산중 증가연산일 때만 c1==65 + 1의 결과값인 유니코드 66을 c2에 대입된다.
 	
-
+	ex : byte a = 10, b = 20;
+		 byte c = a+b;
+		 
+		 byte c = (byte)a+b; - 에러임. 이유는 a(byte) + b(int) = c(int) -> c는 byte 형 변수임으로 치환 불가능.
+		 byte c = (byte)(a+b); - 정상임. 이유는 a(int)+b(int) = byte(c(int))로 치환 한 결과값인 c(byte)로 저장하기 때문에 가능.
+		 
+	
 	
