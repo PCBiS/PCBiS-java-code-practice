@@ -12,6 +12,7 @@ public class Ex07_Casting02 {
 		System.out.println("i2=" + i2); // int 타입으로는 문제가 없으나
 		System.out.println("b2=" + b2); // byte 타입으로는 음수 -128 to 양수 +127 까지 저장 가능하기 때문에 
 										// byte타입으로 담을 수 없는 overflow 된 값은 짤림.
+		
 	}
 }
 
