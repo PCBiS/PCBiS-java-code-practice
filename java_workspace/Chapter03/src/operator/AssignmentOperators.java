@@ -8,7 +8,7 @@ public class AssignmentOperators {
 		
 		
 		
-		result = a+=b;		
+		result = a+=b;
 		System.out.println("a = a + b " + result);
 		result = a-=b;		
 		System.out.println("a = a - b " + result);
