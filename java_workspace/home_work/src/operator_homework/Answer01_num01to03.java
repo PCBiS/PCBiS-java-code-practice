@@ -10,8 +10,9 @@ public class Answer01_num01to03 {
 		
 		num1=num2=num3;
 		/*
-		 * 1. num3 의 값 30을 num2에 대입함 -> num3 = 30 , num2 = 30
-		 * 2. num2 의 값 30을 num1에 대입함 -> num3 = 30 , num2 = 30 , num1 = 30
+		 * 1. 대입 전의 초기 값			    -> num1 = 10, num2 = 20, num3 = 30
+		 * 2. num3 의 값 30을 num2에 대입함 -> num1 = 10, num2 = 30, num3 = 30 
+		 * 3. num2 의 값 30을 num1에 대입함 -> num1 = 30, num2 = 30, num3 = 30
 		 */
 		
 		System.out.println(num1); // 결과적으로 num1 = num3의 값을 대입한 것과 동일한 효과가 발생 함.

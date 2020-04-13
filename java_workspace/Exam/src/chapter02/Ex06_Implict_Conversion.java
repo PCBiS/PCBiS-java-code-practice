@@ -1,7 +1,5 @@
 package chapter02;
 
-import java.util.PrimitiveIterator;
-
 public class Ex06_Implict_Conversion {
 	public static void main(String[] args) {
 		double db = 3.5f + 12; // 3.5f float값을 12 double 값에 더한 상황.		

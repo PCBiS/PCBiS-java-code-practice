@@ -6,6 +6,7 @@ public class Answer04_ABC_TrueFalse {
 		a = (((25+5)+(36/4))-72)*5;
 		b = (((25*5)+(36-4))-71)/4;
 		c = (128/4)*2;
+		
 		System.out.println("DEBUG!!!  a:" + a + " b:" + b + " c:" + c ); 
 		// a : 165, b : 21, c : 64 임으로 a는 b보다 작고 b는 c보다 작다.
 		// 결과적으로 a > b > c = false 임으로
