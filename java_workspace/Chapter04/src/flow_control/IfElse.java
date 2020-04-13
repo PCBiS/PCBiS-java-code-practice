@@ -1,6 +1,9 @@
 package flow_control;
 
 public class IfElse {
+	@SuppressWarnings("unused")
+	// 이게 있으면 경고를 끄는데 그 중에서도 Dead Code(unused)에 대한 경고를 끔. 사용상 주의요망.
+	
 	public static void main(String[] args) {
 		if (true) {
 			System.out.println("true 일 때 출력.");
