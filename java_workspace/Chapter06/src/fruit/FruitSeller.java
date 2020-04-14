@@ -19,11 +19,11 @@ public class FruitSeller {
 	int myMoney = 0; 				// 수입
 	final int PRICEOFAPPLE = 1000; 	// 사과의 가격
 
-	int SaleApple(int money) {		
-		System.out.println("구매자가 " + money + " 원을 지불하여 사과 " + money / PRICEOFAPPLE + " 개를 구매하였습니다." );
+	int SaleApple(int money) {
 		int apple = money / PRICEOFAPPLE; // 돌려줄 사과 개수 = 금액 / 사과가격
 		numOfApple -= apple; // 보유한 사과 개수 = 보유한 사과 개수 - 팔 사과 개수 
 		myMoney += money; // 내 돈 = 내돈 + 들어온 돈
+		System.out.println("구매자가 " + money + " 원을 지불하여 사과 " + apple + " 개를 구매하였습니다." );
 		return apple; // 판 사과를 준다.
 	}
 	

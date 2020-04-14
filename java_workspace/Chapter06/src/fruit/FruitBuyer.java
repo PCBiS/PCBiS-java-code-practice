@@ -21,7 +21,7 @@ public class FruitBuyer {
 	
 	// 참조변수 : 객체의 주소값을 저장하는 변수
 	void buyApple(FruitSeller seller, int money) {		
-		numOfApple += seller.SaleApple(money);
+		numOfApple += seller.SaleApple(money);		
 		myMoney-=money;		
 	}
 	
