@@ -2,8 +2,7 @@ package objectOrient_and_Instance;
 
 public class TV_Factory {
 	public static void main(String[] args) {
-		Tv_Function tv1 = new Tv_Function();
-		Tv_Function tv2 = new Tv_Function();
+		Tv_Function tv1 = new Tv_Function();		
 		
 		tv1.power = true;
 		tv1.channel = 7;
