@@ -19,7 +19,7 @@ public class Tv_Function {
 			channel++;
 			System.out.println("채널을 올립니다.");
 		}
-
+		//만약 이 안에 변수를 선언하면 지역변수가 된다. 이 밖을 나갈 수는 없음.
 	}
 
 	void channelDown() {

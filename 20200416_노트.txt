@@ -1,0 +1,16 @@
+변수와 메소드
+
+지역변수 : 메소드 안 ex) void hello{ int i; }<- 블럭 안에서 선언한 변수, 클래스가 메모리에 올라 갈 때
+인스턴스 변수 : class 안 {} 에서 선언 된 변수, 인스턴스 생성 시에 생성됨
+클래스 변수 : static class 안 {} 에서 선언 된 변수. , 변수 선언시 생성
+
+class Variable{
+	boolean power; <- 인스턴스 변수
+	static int channel; <- 클래스 변수
+	
+	channel{
+		String str = new String; <- 지역변수
+	}	
+	
+}
+
