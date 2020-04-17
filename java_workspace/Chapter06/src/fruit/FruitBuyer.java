@@ -3,7 +3,9 @@ package fruit;
 /*
  * 작성자	: 안정민
  * 작성일	: 2020-04-14
+ * 작성일	: 2020-04-17
  * 작성목적	: 사과구매자 입장에서의 거래 기능을 구현
+ * 수정목적 : 생성자로 사과 개수 초기화
  *   
  * 사과구매자에게 필요한 기능 
  * 속성(Variable) - 보유한 사과의 개수(int), 지갑(int)
@@ -16,8 +18,22 @@ package fruit;
 
 
 public class FruitBuyer {	
+	/*
 	int numOfApple = 0; 			// 사과의 개수
 	int myMoney = 10000; 				// 수입	
+	*/
+	int numOfApple; 			// 사과의 개수
+	int myMoney; 				// 수입
+	
+	FruitBuyer(){
+		numOfApple = 0;
+		myMoney = (int)((Math.random()*10)+5)*1000; // 5천원~1.5만원 들고있는 무작위의 사람을 생성.
+	}
+	
+	FruitBuyer(int apple, int money){
+		numOfApple = apple;
+		myMoney = money;
+	}
 	
 	// 참조변수 : 객체의 주소값을 저장하는 변수
 	void buyApple(FruitSeller seller, int money) {		
