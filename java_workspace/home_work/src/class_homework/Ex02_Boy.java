@@ -7,7 +7,7 @@ public class Ex02_Boy {
 	int numOfMarble;
 		
 	Ex02_Boy() {
-
+		this(10);
 	}
 
 	Ex02_Boy(int num) {
