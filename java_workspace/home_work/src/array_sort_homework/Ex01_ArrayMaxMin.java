@@ -7,6 +7,7 @@ public class Ex01_ArrayMaxMin {
 		
 		System.out.println(minValue(test01));
 		System.out.println(maxValue(test02));
+				
 	}
 	
 	
@@ -24,7 +25,7 @@ public class Ex01_ArrayMaxMin {
 				min = arr[i];
 				arr[i] = arr[0];
 				arr[0] = min;
-			}
+			}			
 			//System.out.println("min : " + min);
 		}
 		return min;
@@ -41,6 +42,7 @@ public class Ex01_ArrayMaxMin {
 	public static int maxValue(int[] arr) {
 		int max = 0;
 		for (int i = 1; i < arr.length; i++) {
+			
 			if (arr[0]<arr[i]) {
 				max = arr[i];
 				arr[i] = arr[0];

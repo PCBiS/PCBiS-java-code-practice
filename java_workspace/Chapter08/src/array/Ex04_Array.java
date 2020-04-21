@@ -27,7 +27,6 @@ public class Ex04_Array {
 		System.out.println();		
 		for (int i = 0; i < 6; i++) {
 			System.out.print(ball[i] + ", ");
-		}
-		
+		}				
 	}
 }
