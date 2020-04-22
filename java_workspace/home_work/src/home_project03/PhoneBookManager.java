@@ -2,13 +2,21 @@ package home_project03;
 
 import java.util.Scanner;
 
-public class BookManager {
+/*
+ * 향후 재설계한다면 기능별로 분할해야 하며 
+ * PhoneBook[100] 배열단위롤 독립된 저장단위로 저장할 방법을
+ * 고민해 볼 필요성이 있다.
+ * 
+ * 지금은 이거 다 뜯어고치다간 처음부터 재설계 들어가야 하니 패스.
+ */
+
+public class PhoneBookManager {
 	private PhoneBook[] book = new PhoneBook[100];
 	private int idx = 0;
 	
 	private void BookManager() {} // 싱글톤 타입으로 사용자 추가 기능을 만든다.	
-	private static BookManager mgr = new BookManager();	
-	public static BookManager getInstance() {
+	private static PhoneBookManager mgr = new PhoneBookManager();	
+	public static PhoneBookManager getInstance() {
 		return mgr;
 	}
 	
@@ -68,10 +76,20 @@ public class BookManager {
 		}		
 	}
 	
-	void UserShow() {
+	void UserAllShow() {
 		for (int j = 0; j < idx; j++) {
 			book[j].showPhoneBook();
 		}		
+	}
+	      
+	/*
+	 * 사용자 검색 모듈 Ver 0.1
+	 * 외부에서 입력받은 이름을 기준으로 
+	 * 배열의 이름값과 입력받은 값을 대조하여
+	 * 일치하는 값의 book[idx]의 정보를 리턴하는 기능.
+	 */
+	void UserSearch(String name) {
+		
 	}
 	
 	private boolean exitCase(String text) {

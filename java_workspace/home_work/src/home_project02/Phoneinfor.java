@@ -1,4 +1,4 @@
-package home_project01;
+package home_project02;
 
 /*
  * 전화번호 관리 프로그램 0.1 Ver.

@@ -1,4 +1,4 @@
-package home_project01;
+package home_project02;
 
 public class Phone {
 	public static void main(String[] args) {
