@@ -1,12 +1,24 @@
 package array_sort_homework;
 
+import java.util.Scanner;
+
 public class Ex01_ArrayMaxMin {
 	public static void main(String[] args) {
-		int test01[] = {8,6,7,4,10,3};
-		int test02[] = {11,8,6,7,4,10,3,17,21,14,13};
 		
-		System.out.println(minValue(test01));
-		System.out.println(maxValue(test02));
+		Scanner sc = new Scanner(System.in);		
+		int test[] = new int[10];		
+		
+		for (int i = 0; i < test.length; i++) {
+			System.out.println("배열에 넣을 숫자를 입력하세요.");
+			test[i] = sc.nextInt();
+		}
+		System.out.println("배열 안에 입력 된 숫자");
+		for (int i = 0; i < test.length; i++) {
+			System.out.print(test[i] + " ");
+		}
+		System.out.println("");	
+		System.out.println(minValue(test));
+		System.out.println(maxValue(test));
 				
 	}
 	

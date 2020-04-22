@@ -18,4 +18,8 @@ public class PhoneBook{
 		System.out.println("생년월일 : " + birthDay);
 	}
 	
+	public boolean searchName(String name) {
+		return this.userName.equals(name);
+	}
+	
 }
