@@ -12,8 +12,8 @@ package home_project04;
  */
 
 public class PhoneUnivInfor extends PhoneInfor {
-	String major;	// 전공
-	String year;	// 학년
+	private String major;	// 전공
+	private String year;	// 학년
 	
 	public PhoneUnivInfor(String name, String phoneNumber, String address, String email, String birthDay, String major, String year) {
 		super(name, phoneNumber, address, email, birthDay); // 조상 변수를 상속받아서 사용.
@@ -22,8 +22,8 @@ public class PhoneUnivInfor extends PhoneInfor {
 	}
 
 	@Override
-	public void infoShow() {		
-		super.infoShow();	// 조상격의 infoShow를 상속받음
+	public void allInfo() {		
+		super.allInfo();	// 조상격의 allInfo를 상속받음
 		System.out.println("전    공 : " + major);	// 자손대에서 추가 된 정보를 출력함.
 		System.out.println("학    년 : " + year);	// 자손대에서 추가 된 정보를 출력함.
 	}

@@ -12,20 +12,17 @@ package home_project04;
  */
 
 
-public class PhoneCompanyInfor extends PhoneInfor {
-	String company;		// 회사명
+public class PhoneCorpInfor extends PhoneInfor {
+	private String company;		// 회사명
 	
-	public PhoneCompanyInfor(String name, String phoneNumber, String address, String email, String birthDay, String company) {
+	public PhoneCorpInfor(String name, String phoneNumber, String address, String email, String birthDay, String company) {
 		super(name, phoneNumber, address, email, birthDay); // 조상 변수를 상속받아서 사용.
 		this.company = company;	// 자손대에서 추가로 확인 된 정보를 대입.
 	}
 
 	@Override
-	public void infoShow() {		
-		super.infoShow();	// 조상격의 infoShow 를 상속받음.
+	public void allInfo() {		
+		super.allInfo();	// 조상격의 allInfo 를 상속받음.
 		System.out.println("회    사 : " + company);	// 자손대에서 추가 된 정보를 출력함.
 	}
-	
-	
-
 }

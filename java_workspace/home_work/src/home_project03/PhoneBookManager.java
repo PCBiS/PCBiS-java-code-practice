@@ -1,5 +1,6 @@
 package home_project03;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class PhoneBookManager {
@@ -84,6 +85,9 @@ public class PhoneBookManager {
 				System.out.println("해당 사용자명에 해당하는 정보를 출력합니다.");
 				System.out.println("============================================");
 				book[findIdx].showPhoneBook();
+				System.out.println("============================================");
+				System.out.println("엔터를 입력하시면 처음 화면으로 돌아갑니다.");
+				try { System.in.read(); } catch (IOException e) { e.printStackTrace();} // 키보드 입력이 진행 될 때 까지 잠시 멈춤.
 			}
 		}
 	}
