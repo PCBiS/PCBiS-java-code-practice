@@ -15,7 +15,8 @@ public class Phone {
 			System.out.println("2. 사용자 정보 보기");			
 			System.out.println("3. 사용자 검색");
 			System.out.println("4. 사용자 삭제");
-			System.out.println("5. 프로그램 종료");
+			System.out.println("5. 사용자 수정");
+			System.out.println("6. 프로그램 종료");
 			select = sc.nextInt();
 			
 			switch (select) {
@@ -23,7 +24,8 @@ public class Phone {
 				System.out.println("등록할 카테고리를 선택하세요.");
 				System.out.println("1. 직장");
 				System.out.println("2. 회사");				
-				System.out.println("3. 동호회");		
+				System.out.println("3. 동호회");
+				System.out.println("4. 기본");
 				depthSelect = sc.nextInt();
 				switch (depthSelect) {
 					case 1:
@@ -33,6 +35,9 @@ public class Phone {
 						infoController.addInfo(depthSelect);
 						break;
 					case 3:
+						infoController.addInfo(depthSelect);
+						break;
+					case 4:
 						infoController.addInfo(depthSelect);
 						break;
 					default:
@@ -68,7 +73,13 @@ public class Phone {
 				infoController.infoDelete(sc.nextLine());
 				break;
 			case 5:
+				sc.nextLine();
+				System.out.println("수정할 사용자의 이름을 입력해주세요.");
+				infoController.infoModify(sc.nextLine());
+				break;
+			case 6:
 				System.out.println("프로그램을 종료 합니다.");
+				sc.close();
 				System.exit(0);				
 			default:
 				System.out.println("잘못 선택 하셨습니다. 다른 번호를 입력하세요.");
