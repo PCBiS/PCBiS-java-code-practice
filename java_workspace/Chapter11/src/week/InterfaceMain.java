@@ -9,7 +9,7 @@ public class InterfaceMain {
 		System.out.println("2. 화요일");
 		System.out.println("3. 수요일");
 		System.out.println("4. 목요일");
-		System.out.println("5. 금요일");
+		System.out.println("5. 금요일");    
 		System.out.println("6. 토요일");
 		System.out.println("7. 일요일");
 		Scanner sc = new Scanner(System.in);

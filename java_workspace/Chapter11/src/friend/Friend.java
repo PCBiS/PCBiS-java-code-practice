@@ -20,7 +20,7 @@ package friend;
  * 							
  */
 
-public abstract class Friend {
+public abstract class Friend implements Info {
 	String name;		// 이름      
 	String phoneNum;	// 전화번호	
 	String addr;		// 주소
@@ -45,6 +45,6 @@ public abstract class Friend {
 
 	// void showData() {}
 	
-	abstract void showData();
+	// abstract void showData();
 	
 }

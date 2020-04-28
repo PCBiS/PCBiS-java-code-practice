@@ -9,9 +9,8 @@ public class UnivFriend extends Friend {
 		this.major = major;
 		this.grade = grade;
 	}
-	
-	@Override
-	void showData() {
+		
+	public void showData() {
 		super.showBasicInfo();
 		System.out.println("전   공 : " + major);
 		System.out.println("학   년 : " + grade);

@@ -7,6 +7,15 @@ import java.util.Scanner;
  *	- Friend 를 저장하는 기능.
  *	- Friend[i] 번의 기본 정보를 출력하는 방법.
  *	- Friend[i] 번의 상세 정보를 출력하는 방법. 
+ *
+ *	20200428 수정사항
+ *	1. Manager 클래스 Singleton 패턴으로 처리.
+ *	01. 생성자 점근제어지시자 : private - 인스턴스 생성을 막는다.
+ *	02. 공동으로 사용 할 인스턴스를 생성한다. : private static
+ *	03. 참조변수를 반환하는 메소드 필요 : static
+ *	
+ *	2. Interface 기반의 상수 표현.
+ *	3. Interface -> 추상클래스 -> 상속관계
  */
 
 
@@ -18,11 +27,16 @@ public class FriendInfoHandler {
 	 * 생성자를 이용한 초기화.
 	 * 저장공간 (사이즈) 크기를 입력 받아서 배열을 생성. 
 	 */
+	private static FriendInfoHandler handler = new FriendInfoHandler(100);
 	
-	public FriendInfoHandler(int num) {				
+	private FriendInfoHandler(int num) {				
 		this.myFriends = new Friend[num];	// num 을 전달받아서 num 크기만한 배열을 생성.
 		this.numOfFriends = 0;	// index 기준 값.
 		this.sc = new Scanner(System.in);
+	}
+	
+	public static FriendInfoHandler getInstance() {
+		return handler;
 	}
 	
 	/*
