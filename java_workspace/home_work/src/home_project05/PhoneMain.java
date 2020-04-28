@@ -22,7 +22,10 @@ public class PhoneMain implements AddInterface, MenuInterface {
 			System.out.println(MenuInterface.UserDelete);
 			System.out.println(MenuInterface.UserModify);
 			System.out.println(MenuInterface.ExitProgram);
-			select = sc.nextInt();
+			System.out.println(MenuInterface.Catagory);
+			
+			//숫자가 아니면 While 무한 반복, 숫자값이 입력되면 While문을 탈출하고 그 다음 입력받은 값을 select에 대입. 
+			while (!sc.hasNextInt()) { sc.next(); System.out.println("숫자가 아닙니다! 메뉴를 선택해주세요."); } select = sc.nextInt();
 			
 			switch (select) {
 			case MenuInterface.UserAddNum:
@@ -31,7 +34,9 @@ public class PhoneMain implements AddInterface, MenuInterface {
 				System.out.println(UserAdd_Univ);				
 				System.out.println(UserAdd_Club);
 				System.out.println(UserAdd_Base);
-				depthSelect = sc.nextInt();
+				//숫자가 아니면 While 무한 반복, 숫자값이 입력되면 While문을 탈출하고 그 다음 입력받은 값을 depthSelect에 대입.
+				while (!sc.hasNextInt()) { sc.next(); System.out.println("숫자가 아닙니다! 메뉴를 선택해주세요."); } depthSelect = sc.nextInt();
+				
 				switch (depthSelect) {
 					case AddInterface.Work:
 						ci.addInfo(depthSelect);
@@ -54,7 +59,9 @@ public class PhoneMain implements AddInterface, MenuInterface {
 				System.out.println(UserSearch_Catagory);
 				System.out.println(UserSearch_Default);
 				System.out.println(UserSearch_Detail);
-				depthSelect = sc.nextInt();
+				
+				while (!sc.hasNextInt()) { sc.next(); System.out.println("숫자가 아닙니다! 메뉴를 선택해주세요."); } depthSelect = sc.nextInt();
+				
 				switch (depthSelect) {
 					case 1:
 						ci.showList(depthSelect);					
