@@ -7,15 +7,19 @@ public class ThreadMain01 {
 		ShowThread tr3 = new ShowThread("Thread03");
 		ShowThread tr4 = new ShowThread("Thread04");
 		
+		tr1.setPriority(Thread.MIN_PRIORITY);
+		tr4.setPriority(Thread.MAX_PRIORITY);
+		
 		tr1.start();
 		tr2.start();
 		tr3.start();
 		tr4.start();
 		
+		/*
 		for (int i = 0; i < 100; i++) {
 			System.out.println("Main Thread");
 		}
-		
+		*/
 		
 	}
 }

@@ -9,8 +9,15 @@ public class ShowThread extends Thread {
 
 	@Override
 	public void run() {
-		for (int i = 0; i < 100; i++) {
-			System.out.println(threadName);
+		for (int i = 0; i < 20; i++) {
+			try {
+				System.out.println(threadName);
+				System.out.println(Thread.currentThread());
+				Thread.sleep(250);
+			} catch (InterruptedException e) {
+
+				e.printStackTrace();
+			}
 		}
 	}
 }
